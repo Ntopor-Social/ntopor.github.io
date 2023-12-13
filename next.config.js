@@ -5,6 +5,7 @@
  **/
 const nextConfig = {
   output: "export",
+  basePath: '/github-pages',
   /* config options here */
 };
 
