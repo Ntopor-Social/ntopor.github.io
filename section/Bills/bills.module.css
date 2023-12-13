@@ -1,0 +1,42 @@
+.container {
+    @apply flex flex-col justify-center items-center bg-main-off-white;
+    @apply xl:p-[120px] xl:gap-[50px];
+}
+
+.containerTop {
+    @apply flex flex-col gap-4 justify-center items-center
+}
+
+.containerTop > h4 {
+    @apply font-semibold text-[40px] text-main-black;
+}
+
+.containerTop > h4 > span {
+    @apply font-semibold text-[40px] text-main-theme-color;
+}
+
+.topTitleContainer {
+    @apply flex flex-row items-center justify-center gap-4;
+}
+
+.topTitleContainer > h3 {
+    @apply text-2xl text-main-black font-medium;
+}
+
+.containerBottom {
+    @apply flex flex-col justify-center items-center w-full;
+    @apply xl:gap-[33px]
+}
+
+.switchContainer {
+    @apply flex flex-row justify-center w-full items-center gap-6;
+}
+
+.switchContainer > h6 {
+    @apply font-medium text-main-black text-lg;
+}
+
+.planContainer {
+    @apply grid grid-cols-1;
+    @apply xl:grid-cols-3 xl:gap-[40px];
+}

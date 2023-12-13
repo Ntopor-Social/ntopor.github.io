@@ -1,0 +1,83 @@
+.container {
+    @apply w-full flex justify-center items-center;
+    @apply xl:flex-row xl:p-[120px];
+}
+
+.containerLeft {
+    @apply flex flex-col justify-center items-start;
+    @apply xl:w-1/2 xl:gap-4;
+}
+
+.containerLeft > h3 {
+    @apply text-[40px] font-semibold text-main-black w-[452px];
+}
+
+.containerLeft > h3 > span {
+    @apply text-main-theme-color text-[40px] font-semibold;
+}
+
+.containerLeft > p {
+    @apply text-lg text-main-grey font-normal w-[452px];
+}
+
+.stats {
+    @apply flex flex-row justify-start items-center divide-x-[1.5px] divide-black/20 gap-8;
+}
+
+.statsDetail {
+    @apply flex flex-col justify-start items-start gap-2;
+}
+
+.statsDetail > h6 {
+    @apply text-main-theme-color font-semibold text-[32px];
+}
+
+.statsDetail > p {
+    @apply text-lg font-normal text-black;
+}
+
+.margin {
+    @apply pl-8
+}
+
+.containerRight {
+    @apply flex flex-col justify-center items-center;
+    @apply xl:w-1/2 xl:flex-row xl:gap-6;
+}
+
+.rightCard {
+    @apply relative p-6 rounded-2xl bg-main-off-white flex flex-col gap-4;
+    @apply xl:w-[280px];
+}
+
+.rightCardTitle {
+    @apply flex flex-col gap-1 justify-start items-start;
+}
+
+.rightCardTitle > h6 {
+    @apply text-[28px] text-main-black font-semibold;
+}
+
+.rightCardTitle > p {
+    @apply text-lg font-normal text-main-black;
+}
+
+.rightCardButton {
+    @apply w-fit;
+}
+
+.rightCardQR {
+    @apply h-[66px] aspect-square mt-4 mr-auto;
+}
+
+.rightCardQR > img {
+    @apply h-full w-full object-center object-contain;
+}
+
+.rightCardIcon {
+    @apply absolute bg-white h-[113px] -bottom-[20px] -right-[20px] aspect-square rounded-full flex justify-center items-center;
+}
+
+.rightIcon {
+    @apply h-[54px] aspect-square fill-main-black;
+}

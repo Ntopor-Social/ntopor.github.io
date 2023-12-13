@@ -1,0 +1,52 @@
+.searchParam {
+    @apply flex flex-col gap-3 justify-start items-start;
+}
+
+.searchParam > label {
+    @apply text-lg text-main-grey font-normal;
+}
+
+.dropDown {
+    @apply relative;
+}
+
+.dropDownButton {
+    @apply flex flex-row justify-center items-center gap-8;
+
+}
+
+.dropText {
+    @apply flex flex-row gap-2 items-center justify-center;
+}
+
+.dropText > span {
+    @apply text-main-black text-lg font-medium;
+}
+
+.dropIcon {
+    @apply stroke-main-black h-[24px] w-[24px];
+}
+
+.dropItems {
+    @apply absolute z-10 left-0 right-0 top-8 bg-white shadow-md rounded p-0 flex flex-col justify-start items-start overflow-y-auto h-0 duration-500 ease-in-out;
+}
+
+.droppedItems {
+    @apply h-[150px] p-2 shadow-md;
+}
+
+.dropItems::-webkit-scrollbar {
+    @apply w-[3.5px] h-[3.5px] bg-transparent;
+}
+  
+.dropItems::-webkit-scrollbar-thumb {
+    @apply w-[3.5px] h-[3.5px] bg-main-theme-color rounded-[6px];
+}
+  
+.dropItems::-webkit-scrollbar-track {
+    @apply w-[3.5px] h-[3.5px] bg-main-grey-dark rounded-[6px];
+}
+
+.dropItem {
+    @apply text-base text-main-grey hover:text-main-black duration-500 ease-in-out py-1;
+}

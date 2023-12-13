@@ -1,0 +1,236 @@
+.headerCard {
+    @apply rounded-lg p-2 bg-white w-[205px];
+    box-shadow: 0px 8.352px 147.298px 0px rgba(0, 0, 0, 0.07);
+}
+
+.headerCardImage {
+    @apply relative rounded-lg h-[106px] overflow-clip w-full bg-black/20;
+}
+
+.headerCardImage > img {
+    @apply w-full h-full object-center object-cover;
+}
+
+.headerIcon {
+    @apply absolute top-[6px] right-[6px];
+}
+
+.stats {
+    @apply flex flex-col justify-start items-start mt-[10px] gap-1.5;
+}
+
+.stats > h6 {
+    @apply text-xs font-medium text-main-black;
+}
+
+.statsDetails {
+    @apply flex flex-row justify-between items-center gap-[10px] w-full;
+}
+
+.statsDetails > p {
+    @apply text-main-theme-color text-xs font-medium;
+}
+
+.statsDetails > p > span {
+    @apply text-main-grey text-[7.593px] font-normal;
+}
+
+.statsDets {
+    @apply flex flex-row justify-start items-center gap-[3.8px];
+}
+
+.statsDets > p {
+    @apply text-[9.111px] text-main-grey font-normal whitespace-nowrap;
+}
+
+.statsIcon {
+    @apply fill-main-theme-color w-[10px] h-[11px];
+}
+
+
+/* Event card styles */
+
+.eventCard {
+    @apply rounded-2xl bg-white overflow-clip w-[382px];
+    box-shadow: 0px 4px 74px 0px rgba(0, 0, 0, 0.10);
+}
+
+.eventPic {
+    @apply bg-main-grey-dark h-[229px] w-full;
+}
+
+.eventPic > img {
+    @apply h-full w-full object-center object-contain;
+}
+
+.eventVideo {
+    @apply relative bg-main-grey-dark h-[229px] w-full;
+}
+
+.eventControl {
+    @apply absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 flex justify-center items-center w-16 aspect-square rounded-full bg-white/20;
+    box-shadow: 0px 19.2px 19.2px 0px rgba(130, 130, 130, 0.20);
+}
+
+.eventControlIcon {
+    @apply fill-white w-[30px] h-[30px];
+}
+
+.eventDetails {
+    @apply p-6 flex flex-col gap-4;
+}
+
+.eventDetail {
+    @apply flex flex-col gap-[14px];
+}
+
+.eventDetail > h6 {
+    @apply text-main-black font-semibold text-[22px];
+}
+
+.eventDetail > p {
+    @apply text-main-theme-color text-2xl font-semibold;
+}
+
+.eventDetail > p > span {
+    @apply text-main-grey text-lg font-normal;
+}
+
+.eventLocation {
+    @apply flex flex-row justify-start items-center gap-2;
+}
+
+.eventLocation > p {
+    @apply text-base text-main-grey font-medium;
+}
+
+.locationIcon {
+    @apply fill-main-theme-color h-[24px] w-[24px]
+}
+
+.divider {
+    @apply w-full h-[2px] bg-main-grey-dark;
+}
+
+.eventInfos {
+    @apply flex flex-row justify-between items-center w-full;
+}
+
+.eventInfo {
+    @apply flex flex-row gap-[6px] items-center justify-start;
+}
+
+.eventInfo > p {
+    @apply text-main-black text-base font-medium;
+}
+
+.eventIcon {
+    @apply fill-main-theme-color h-6 w-6;
+}
+
+/* Blog infos styles */
+
+.blogBadge {
+    @apply px-4 py-2 rounded-lg bg-main-theme-color/10 w-fit;
+}
+
+.blogBadge > p {
+    @apply text-main-theme-color font-medium text-sm;
+}
+
+.blogInfos {
+    @apply flex flex-row justify-start gap-4 items-center w-full;
+}
+
+.blogInfo {
+    @apply flex flex-row gap-[6px] items-center justify-start;
+}
+
+.blogInfo > p {
+    @apply text-main-grey text-base font-normal;
+}
+
+.blogIcon {
+    @apply stroke-main-theme-color h-6 w-6;
+}
+
+
+/* Features card styles  */
+
+.featureCard {
+    @apply bg-white overflow-clip px-[20px] py-8 rounded-2xl flex gap-[35px] items-center;
+    @apply xl:h-[516px];
+    box-shadow: 0px 9.793px 172.719px 0px rgba(0, 0, 0, 0.07);
+}
+
+.featureTitle {
+    @apply flex flex-col gap-2 justify-center items-center;
+}
+
+.featureTitle > h6 {
+    @apply font-semibold text-2xl text-main-black;
+}
+
+.featureTitle > p {
+    @apply text-base font-normal text-main-grey text-center;
+}
+
+.featureImage {
+    @apply !h-[534px] w-[253px] shrink-0;
+}
+
+.featureImage > img {
+    @apply !h-full w-full object-cover;
+}
+
+
+/* Plan Card styles */
+
+.planCard {
+    @apply relative h-[485px] w-[294px] shrink-0 rounded-xl p-[33px];
+    box-shadow: 0px 14px 26px 0px rgba(0, 0, 0, 0.02);
+}
+
+.planPrice {
+    @apply bg-transparent mb-[14px];
+}
+
+.planPrice > p {
+    @apply text-[38px] font-semibold;
+}
+
+.planPrice > p > span {
+    @apply text-lg font-normal;
+}
+
+.planCard > h6 {
+    @apply text-[23px] font-medium mb-[10px];
+}
+
+.planCard > p {
+    @apply text-sm font-normal;
+}
+
+.divider {
+    @apply w-full h-[1px] bg-[#E8E8E8] my-6;
+}
+
+.planDetails {
+    @apply flex flex-col gap-[15px] justify-center items-start; 
+}
+
+.planDetail {
+    @apply flex flex-row justify-start items-center gap-[11px];
+}
+
+.planCheckIcon {
+    @apply h-6 w-6;
+}
+
+.planDetail > p {
+    @apply text-sm font-normal;
+}
+
+.planButton {
+    @apply mt-auto absolute bottom-[33px] left-[33px] right-[33px];
+}

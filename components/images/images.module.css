@@ -1,0 +1,15 @@
+.images {
+    @apply flex flex-row justify-start items-center;
+}
+
+.image {
+    @apply border h-[18px] aspect-square rounded-full border-white -ml-1.5 overflow-clip bg-main-theme-color flex justify-center items-center;
+}
+
+.image > p {
+    @apply text-[7.593px] text-white;
+}
+
+.image > img {
+    @apply w-full h-full object-center object-cover bg-main-grey-dark;
+}

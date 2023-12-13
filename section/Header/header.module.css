@@ -1,0 +1,148 @@
+.container {
+    @apply relative flex w-full justify-center items-start bg-main-off-white;
+    @apply xl:flex-row xl:px-[120px] xl:pt-[135px] xl:h-[741px];
+}
+
+.containerLeft {
+    @apply flex flex-col justify-start items-start w-full;
+    @apply xl:w-1/2 xl:gap-6;
+}
+
+.leftTitleContainer {
+    @apply flex flex-row gap-3 justify-start items-center
+}
+
+.leftTitleContainer > h1 {
+    @apply uppercase text-main-black text-2xl font-medium;
+}
+
+.containerLeft > h2 {
+    @apply font-semibold text-6xl text-main-black;
+}
+
+.containerLeft > h2 > span {
+    @apply font-semibold text-6xl !text-main-theme-color;
+}
+
+.containerLeft > p {
+    @apply text-left text-main-grey font-normal pr-44;
+}
+
+.storeContainer {
+    @apply flex flex-row justify-start items-center gap-2 my-6;
+}
+
+.storeButton {
+    @apply outline-none;
+}
+
+.storeIcon {
+    @apply h-14 w-auto;
+}
+
+.statsContainer {
+    @apply flex flex-row justify-start items-center gap-4 mt-2;
+}
+
+.statsUsers {
+    @apply flex flex-row justify-start items-center;
+}
+
+.statsUser {
+    @apply flex justify-center items-center border-[3px] border-white rounded-full overflow-clip h-16 aspect-square bg-main-grey-dark;
+}
+
+.addUser {
+    @apply stroke-main-theme-color h-8 w-8;
+}
+
+.margin {
+    @apply -ml-4;
+}
+
+.whiteBackground {
+    @apply !bg-main-off-white; 
+}
+
+.statsUser > img {
+    @apply h-full w-full object-cover object-center;
+}
+
+.statsDetails {
+    @apply flex flex-col gap-2 justify-start items-start;
+}
+
+.statsDetails > h6 {
+    @apply text-main-black text-2xl font-semibold;
+}
+
+.statsDetails > p {
+    @apply text-base font-normal text-main-grey;
+}
+
+
+
+.containerRight {
+    @apply relative w-full h-full flex justify-center items-end;
+    @apply xl:w-1/2 xl:pb-[81px];
+}
+
+.rightBox {
+    @apply relative bg-red-50 z-30;
+
+}
+
+.rightBox > img {
+    @apply absolute !h-[614.952px] -z-20 w-auto object-contain -bottom-[74px];
+}
+
+.rightBox::before {
+    @apply content-[""] absolute h-[420px] -z-10 -bottom-20 aspect-square rounded-md bg-main-off-white;
+}
+
+.rightCircle {
+    @apply bg-main-theme-color h-[438px] z-30 aspect-square rounded-full overflow-hidden flex justify-center items-center;
+}
+
+.rightCircle > img {
+    @apply !h-[614.952px] w-auto object-contain object-top;
+}
+
+.waves {
+    @apply absolute -top-32 left-4;
+}
+
+.wavesIcon {
+    @apply fill-main-theme-color w-[78px] h-[46px];
+}
+
+.card {
+    @apply absolute -right-20 top-48 z-10;
+}
+
+
+.dash {
+    @apply bg-main-theme-color h-[3px] w-4;
+}
+
+.crown {
+    @apply absolute rounded-[72px] -bottom-12 left-1/2 -translate-x-1/2 p-1 overflow-clip h-24 w-40 rotate-90;
+    background: linear-gradient(to right, var(--THEME-COLOR) 0%, var(--THEME-COLOR) 50%, transparent 50%, transparent 50%);
+}
+
+.throne {
+    @apply h-full w-full bg-white rounded-[72px];
+}
+
+.scrollDown {
+    @apply absolute -bottom-12 left-1/2 -translate-x-1/2  p-2 rounded-lg;
+}
+
+.scrollDownButton {
+    @apply py-7 px-4 bg-white rounded-[72px] cursor-pointer;
+    box-shadow: 0px 10.728px 41.38px 0px rgba(0, 0, 0, 0.13);
+}
+
+.scrollDownIcon {
+    @apply h-7 w-7 fill-main-theme-color;
+}

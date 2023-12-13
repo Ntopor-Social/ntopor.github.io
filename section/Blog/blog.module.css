@@ -1,0 +1,45 @@
+.container {
+    @apply flex flex-col justify-start items-center bg-main-off-white;
+    @apply xl:p-[120px] xl:gap-[50px];
+}
+
+.containerTop {
+    @apply flex flex-col gap-4 justify-center items-end;
+    @apply xl:flex-row;
+}
+
+.topTitle {
+    @apply flex flex-col justify-start items-start;
+    @apply xl:w-1/2;
+}
+
+.topTitle > h4 {
+    @apply font-semibold text-[40px] text-main-black;
+}
+
+.topTitle > h4 > span {
+    @apply font-semibold text-[40px] text-main-theme-color;
+}
+
+.topTitleContainer {
+    @apply flex flex-row items-center justify-center gap-4;
+}
+
+.topTitleContainer > h3 {
+    @apply text-2xl text-main-black font-medium;
+}
+
+.topDescription {
+    @apply border-l-4 pl-2 py-1 border-l-main-theme-color;
+    @apply xl:w-1/2;
+}
+
+.topDescription > p {
+    @apply text-lg font-normal text-main-grey ;
+}
+
+.containerBottom {
+    @apply grid grid-cols-1 w-full;
+    @apply xl:gap-[33px] xl:grid-cols-3;
+    /* @apply 2xl:grid-cols-4; */
+}

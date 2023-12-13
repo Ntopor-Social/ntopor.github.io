@@ -1,0 +1,129 @@
+.container {
+    @apply flex flex-col justify-center items-center bg-white;
+    @apply xl:p-[120px] xl:gap-[50px];
+}
+
+.containerTop {
+    @apply flex flex-col gap-4 justify-center items-center
+}
+
+.containerTop > h4 {
+    @apply font-semibold text-[40px] text-main-black;
+}
+
+.containerTop > h4 > span {
+    @apply font-semibold text-[40px] text-main-theme-color;
+}
+
+.topTitleContainer {
+    @apply flex flex-row items-center justify-center gap-4;
+}
+
+.topTitleContainer > h3 {
+    @apply text-2xl text-main-black font-medium;
+}
+
+.containerBottom {
+    @apply relative flex flex-row justify-center items-center w-full overflow-clip z-10;
+    /* @apply xl:gap-[33px]; */
+}
+
+.testimonialCard {
+    @apply flex flex-col justify-start items-center duration-500 ease-in-out;
+}
+
+.prev2 {
+    @apply absolute -top-7 -translate-x-[90%] scale-[0.8] opacity-0;
+}
+
+.prev1 {
+    @apply absolute -top-7 -translate-x-[60%]  scale-[0.8];
+}
+
+.prev {
+    @apply absolute -top-7 -translate-x-[30%] scale-[0.8];
+}
+
+.current {
+    @apply relative translate-x-0 z-10;
+}
+
+.next {
+    @apply absolute -top-7 translate-x-[30%] scale-[0.8]; 
+}
+
+.next1 {
+    @apply absolute -top-7 translate-x-[60%] scale-[0.8]; 
+}
+
+.next2 {
+    @apply absolute -top-7 translate-x-[90%] scale-[0.8] opacity-0;
+}
+
+.opacity0 {
+    @apply opacity-0;
+}
+
+.opacity100 {
+    @apply opacity-100;
+}
+
+.testimonialCardImage {
+    @apply w-[145px] aspect-square rounded-full border-[2px] overflow-clip mb-[36px];
+}
+
+.testimonialCardImage > img {
+    @apply h-full w-full object-center object-cover;
+}
+
+.testimonialCustomer {
+    @apply flex flex-col gap-1 justify-center items-center mb-6 duration-500 ease-in-out;
+}
+
+.testimonialCustomer > h6 {
+    @apply text-main-black font-semibold text-2xl;
+}
+
+.testimonialCustomer > p {
+    @apply text-main-black font-normal text-lg;
+}
+
+.ratingContainer {
+    @apply flex flex-row gap-2 justify-center items-center mb-[56px] duration-500 ease-in-out;
+}
+
+.ratingIcon {
+    @apply fill-yellow-500 h-8 w-8;
+}
+
+.quoteContainer {
+    @apply relative w-[800px] duration-500 ease-in-out;
+}
+
+.quoteContainer > p {
+    @apply text-2xl text-main-black font-normal text-center;
+}
+
+.quoteIcon {
+    @apply absolute fill-main-grey w-[115px] h-[87px] -top-16 left-0;
+}
+
+.quoteIcon1 {
+    @apply absolute fill-main-grey w-[115px] h-[87px] -scale-x-100 -bottom-3 right-0;
+}
+
+.controlButton {
+    @apply absolute z-50 cursor-pointer left-0 top-10 w-[52px] aspect-square rounded-full bg-main-theme-color flex justify-center items-center;
+}
+
+.controlButton1 {
+    @apply absolute z-20 cursor-pointer right-0 top-10 w-[52px] aspect-square rounded-full bg-main-theme-color flex justify-center items-center;
+}
+
+.controlIcon {
+    @apply w-8 h-8 stroke-white rotate-90;
+}
+
+.controlIcon1 {
+    @apply w-8 h-8 stroke-white -rotate-90;
+}

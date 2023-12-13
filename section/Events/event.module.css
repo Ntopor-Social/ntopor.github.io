@@ -1,0 +1,95 @@
+.clip {
+    @apply overflow-x-clip;
+}
+
+.banner {
+    @apply h-[100px] w-full bg-main-black mb-20;
+}
+
+.bannerContents {
+    @apply flex flex-row justify-center items-center bg-main-theme-color py-6 w-[105%] -ml-4 overflow-clip -rotate-[3deg] gap-[60px]; 
+}
+
+.ban {
+    @apply flex flex-row items-center gap-8;
+}
+
+.ban > p {
+    @apply text-white text-[48px] font-bold decoration-white;
+}
+
+.underlined {
+    @apply underline;
+}
+
+.banIcon {
+    @apply w-[55px] aspect-square bg-white rounded-full flex justify-center items-center;
+}
+
+.bannerIcon {
+    @apply fill-main-black h-[18px] w-[18px] rotate-[-130deg];
+}
+
+.container {
+    @apply flex flex-col justify-center items-center bg-white;
+    @apply xl:p-[120px] xl:gap-[50px];
+}
+
+.containerTop {
+    @apply flex flex-col gap-4 justify-center items-center
+}
+
+.containerTop > h4 {
+    @apply font-semibold text-[40px] text-main-black;
+}
+
+.containerTop > h4 > span {
+    @apply font-semibold text-[40px] text-main-theme-color;
+}
+
+.topTitleContainer {
+    @apply flex flex-row items-center justify-center gap-4;
+}
+
+.topTitleContainer > h3 {
+    @apply text-2xl text-main-black font-medium;
+}
+
+.containerBottom {
+    @apply flex justify-center items-center w-full;
+    @apply xl:gap-[90px] xl:flex-col;
+}
+
+.searchContainer {
+    @apply relative w-full h-[97px] rounded-2xl bg-main-theme-color;
+}
+
+.searchBanner {
+    @apply absolute flex flex-row justify-between items-center top-[12px] left-[12px] right-[12px] p-[24px] bg-white rounded-lg;
+    box-shadow: 0px 9.793px 172.719px 0px rgba(0, 0, 0, 0.07);
+}
+
+.searchParams {
+    @apply flex flex-row gap-[66px] divide-main-grey-dark divide-x-[2px];
+}
+
+.searchParam {
+    @apply pl-8;
+    @apply xl:pl-[66px];
+}
+
+.dropIcon {
+    @apply stroke-main-black h-[24px] w-[24px];
+}
+
+.searchIcon {
+    @apply stroke-white h-[24px] w-[24px];
+}
+
+.eventsContainer {
+    @apply grid grid-cols-1 w-full;
+    @apply xl:grid-cols-3 xl:gap-8;
+    @apply 2xl:grid-cols-4;
+}
+
+

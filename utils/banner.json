@@ -1,0 +1,26 @@
+[
+    {
+        "label": "Music",
+        "icon": false
+    },
+    {
+        "label": "Business",
+        "icon": true
+    },
+    {
+        "label": "Dance",
+        "icon": false
+    },
+    {
+        "label": "Education",
+        "icon": false
+    },
+    {
+        "label": "Fitness",
+        "icon": false
+    },
+    {
+        "label": "Action",
+        "icon": false
+    }
+]

@@ -1,0 +1,75 @@
+.container {
+    @apply flex flex-col justify-center items-center bg-white;
+    @apply xl:p-[120px] xl:gap-[50px] xl:pt-[350px];
+}
+
+.containerTop {
+    @apply flex flex-col gap-4 justify-center items-center
+}
+
+.containerTop > h4 {
+    @apply font-semibold text-[40px] text-main-black;
+}
+
+.containerTop > h4 > span {
+    @apply font-semibold text-[40px] text-main-theme-color;
+}
+
+.topTitleContainer {
+    @apply flex flex-row items-center justify-center gap-4;
+}
+
+.topTitleContainer > h3 {
+    @apply text-2xl text-main-black font-medium;
+}
+
+.containerBottom {
+    @apply flex justify-center items-center w-full;
+    @apply xl:gap-[33px] xl:flex-row;
+}
+
+.bottomIllustration {
+    @apply flex justify-center items-center;
+    @apply xl:w-1/2;
+}
+
+.bottomIllustrationIcon {
+    @apply h-[533px] w-[529.153px];
+}
+
+.steps {
+    @apply flex flex-col justify-start items-start;
+    @apply xl:gap-[66px] xl:w-1/2;
+}
+
+.step {
+    @apply flex flex-row justify-start items-center gap-6;
+}
+
+.stepIconContainer {
+    @apply w-[70px] shrink-0 aspect-square rounded-full bg-main-black flex justify-center items-center;
+}
+
+.stepIcon {
+    @apply h-8 w-8 fill-white;
+}
+
+.stepIconContainer1 {
+    @apply w-[70px] shrink-0 aspect-square rounded-full bg-main-off-white flex justify-center items-center;
+}
+
+.stepIcon1 {
+    @apply h-8 w-8 fill-main-theme-color;
+}
+
+.stepDetail {
+    @apply flex flex-col gap-2;
+}
+
+.stepDetail > h6 {
+    @apply text-main-black text-2xl font-semibold;
+}
+
+.stepDetail > p {
+    @apply text-main-grey text-[16px] font-normal;
+}

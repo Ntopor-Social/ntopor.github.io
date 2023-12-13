@@ -1,0 +1,98 @@
+.container {
+    @apply bg-main-black flex flex-col justify-end;
+    @apply xl:h-[687px] xl:px-[72px] xl:gap-[50px]; 
+}
+
+.containerBanner {
+    @apply rounded-[30px] w-full bg-main-theme-color flex flex-col justify-center items-center gap-4 p-[60px];
+}
+
+.containerBanner > h3 {
+    @apply text-white text-2xl font-normal;
+}
+
+.containerBanner > h4 {
+    @apply text-white font-semibold text-[52px];
+}
+
+.containerBanner > p {
+    @apply text-white text-lg font-normal;
+}
+
+.storeContainer {
+    @apply flex flex-row justify-start items-center gap-2 my-6;
+}
+
+.storeButton {
+    @apply outline-none;
+}
+
+.storeIcon {
+    @apply h-14 w-auto;
+}
+
+.containerBottom {
+    @apply flex flex-col gap-4 justify-center items-center;
+    @apply xl:px-[48px] xl:gap-[50px] xl:pb-[50px];
+}
+
+.linksContainer {
+    @apply flex flex-row justify-between items-start w-full;
+}
+
+.companyInfo {
+    @apply flex flex-col gap-[26px] justify-start items-start;
+}
+
+.companyInfo > p {
+    @apply text-base text-white font-normal;
+    @apply xl:w-[414px];
+}
+
+.companyLinks {
+    @apply flex flex-row items-center justify-start gap-4;
+}
+
+.linksIcon {
+    @apply h-6 w-6 fill-white;
+}
+
+.companyNav {
+    @apply flex flex-col gap-[30px];
+}
+
+.companyNav > h6 {
+    @apply text-white text-[20px] font-normal;
+}
+
+.companyNavLinks {
+    @apply flex flex-col gap-[22px] justify-start items-start;
+}
+
+.companyNavLink {
+    @apply text-base text-main-grey font-medium hover:text-white;
+}
+
+.inputContainer {
+    @apply flex flex-row justify-center items-center bg-white/20 rounded-[10px] pl-[14px];
+}
+
+.sendButton {
+    @apply bg-main-theme-color flex justify-center items-center w-[47.5px] aspect-square rounded-r-[10px];
+}
+
+.sendIcon {
+    @apply fill-white w-[21px] h-[21px];
+}
+
+.divider {
+    @apply h-[1px] w-full bg-main-grey;
+}
+
+.footer {
+    @apply flex flex-row items-center justify-between w-full;
+}
+
+.footer > p {
+    @apply text-white font-normal text-[20px];
+}
