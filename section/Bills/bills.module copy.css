@@ -43,41 +43,23 @@
 
 .planContainer {
     @apply relative grid grid-cols-1 w-full px-6 overflow-x-clip;
-    @apply xl:grid-cols-3 xl:gap-[40px] xl:px-0 xl:w-fit;
+    @apply xl:grid-cols-3 xl:gap-[40px] xl:px-0;
 }
 
 .carouselContent {
     @apply flex justify-center duration-700 ease-in-out w-full;
 }
 
-.nextContent {
-    @apply absolute top-0 translate-x-[78%] opacity-100 scale-90;
+.prevContent {
+    @apply absolute top-0 translate-x-[120%] opacity-100 scale-90;
     @apply xl:relative xl:translate-x-0 xl:opacity-100 xl:scale-100;
-}
-
-.disappear {
-    @apply translate-x-[100%];
-    @apply xl:translate-x-0;
 }
 
 .currentContent {
     @apply relative;
 }
 
-.prevContent {
-    @apply absolute top-0 -translate-x-[78%] opacity-100 scale-90;
+.nextContent {
+    @apply absolute top-0 -translate-x-[85%] opacity-100 scale-90;
     @apply xl:relative xl:translate-x-0 xl:opacity-100 xl:scale-100;
-}
-
-.carouselControls {
-    @apply flex flex-row justify-center items-center gap-3;
-    @apply xl:hidden;
-}
-
-.carouselIndicate {
-    @apply w-[20px] aspect-square rounded-full opacity-25 bg-main-theme-color;
-}
-
-.indicateActive {
-    @apply opacity-100;
 }

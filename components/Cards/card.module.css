@@ -51,12 +51,14 @@
 /* Event card styles */
 
 .eventCard {
-    @apply rounded-2xl bg-white overflow-clip w-[382px];
+    @apply rounded-2xl bg-white overflow-clip w-[327px];
+    @apply xl:w-[382px];
     box-shadow: 0px 4px 74px 0px rgba(0, 0, 0, 0.10);
 }
 
 .eventPic {
-    @apply bg-main-grey-dark h-[229px] w-full;
+    @apply bg-main-grey-dark h-[196px] w-full;
+    @apply xl:h-[229px];
 }
 
 .eventPic > img {
@@ -77,7 +79,8 @@
 }
 
 .eventDetails {
-    @apply p-6 flex flex-col gap-4;
+    @apply px-[20px] py-[22px] flex flex-col gap-4;
+    @apply xl:p-6 xl:gap-6;
 }
 
 .eventDetail {
@@ -85,15 +88,18 @@
 }
 
 .eventDetail > h6 {
-    @apply text-main-black font-semibold text-[22px];
+    @apply text-main-black font-semibold text-[18px];
+    @apply xl:text-[22px];
 }
 
 .eventDetail > p {
-    @apply text-main-theme-color text-2xl font-semibold;
+    @apply text-main-theme-color text-[20px] font-semibold;
+    @apply xl:text-2xl;
 }
 
 .eventDetail > p > span {
     @apply text-main-grey text-lg font-normal;
+    @apply xl:text-lg;
 }
 
 .eventLocation {
@@ -105,10 +111,11 @@
 }
 
 .locationIcon {
-    @apply fill-main-theme-color h-[24px] w-[24px]
+    @apply fill-main-theme-color h-[20px] w-[20px];
+    @apply xl:h-[24px] xl:w-[24px];
 }
 
-.divider {
+.divider2 {
     @apply w-full h-[2px] bg-main-grey-dark;
 }
 
@@ -121,7 +128,8 @@
 }
 
 .eventInfo > p {
-    @apply text-main-black text-base font-medium;
+    @apply text-main-black text-sm font-medium;
+    @apply xl:text-base;
 }
 
 .eventIcon {
@@ -147,7 +155,8 @@
 }
 
 .blogInfo > p {
-    @apply text-main-grey text-base font-normal;
+    @apply text-main-grey text-sm font-normal;
+    @apply xl:text-base;
 }
 
 .blogIcon {
@@ -158,7 +167,7 @@
 /* Features card styles  */
 
 .featureCard {
-    @apply bg-white overflow-clip px-[20px] py-8 rounded-2xl flex gap-[35px] items-center;
+    @apply bg-white overflow-clip px-[20px] h-[443px] py-8 rounded-2xl flex gap-[35px] items-center;
     @apply xl:h-[516px];
     box-shadow: 0px 9.793px 172.719px 0px rgba(0, 0, 0, 0.07);
 }
@@ -187,7 +196,8 @@
 /* Plan Card styles */
 
 .planCard {
-    @apply relative h-[485px] w-[294px] shrink-0 rounded-xl p-[33px];
+    @apply relative h-[457px] w-[294px] shrink-0 rounded-xl p-[33px];
+    @apply xl:h-[485px];
     box-shadow: 0px 14px 26px 0px rgba(0, 0, 0, 0.02);
 }
 

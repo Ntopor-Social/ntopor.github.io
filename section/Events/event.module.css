@@ -3,11 +3,13 @@
 }
 
 .banner {
-    @apply h-[100px] w-full bg-main-black mb-20;
+    @apply h-[100px] w-full bg-main-black;
+    @apply xl:mb-20;
 }
 
 .bannerContents {
-    @apply flex flex-row justify-center items-center bg-main-theme-color py-6 w-[105%] -ml-4 overflow-clip -rotate-[3deg] gap-[60px]; 
+    @apply flex flex-row justify-start items-center bg-main-theme-color py-6 w-[105%] -ml-4 overflow-clip -rotate-[2deg] gap-[60px]; 
+    @apply xl:-rotate-[3deg] xl:justify-center;
 }
 
 .ban {
@@ -15,7 +17,8 @@
 }
 
 .ban > p {
-    @apply text-white text-[48px] font-bold decoration-white;
+    @apply text-white text-[33.754px] font-bold decoration-white;
+    @apply xl:text-[48px];
 }
 
 .underlined {
@@ -24,27 +27,32 @@
 
 .banIcon {
     @apply w-[55px] aspect-square bg-white rounded-full flex justify-center items-center;
+    @apply xl:w-[38.676px];
 }
 
 .bannerIcon {
-    @apply fill-main-black h-[18px] w-[18px] rotate-[-130deg];
+    @apply fill-main-black h-[13px] w-[13px] rotate-[-130deg];
+    @apply xl:h-[18px] xl:w-[18px];
 }
 
 .container {
-    @apply flex flex-col justify-center items-center bg-white;
+    @apply flex flex-col justify-center py-[76px] gap-6 items-center bg-white;
     @apply xl:p-[120px] xl:gap-[50px];
 }
 
 .containerTop {
-    @apply flex flex-col gap-4 justify-center items-center
+    @apply flex flex-col gap-4 justify-center items-center  px-6;
+    @apply xl:px-0;
 }
 
 .containerTop > h4 {
-    @apply font-semibold text-[40px] text-main-black;
+    @apply font-semibold text-[32px] text-main-black;
+    @apply xl:text-[40px];
 }
 
 .containerTop > h4 > span {
-    @apply font-semibold text-[40px] text-main-theme-color;
+    @apply font-semibold text-[32px] text-main-theme-color;
+    @apply xl:text-[40px];
 }
 
 .topTitleContainer {
@@ -52,30 +60,43 @@
 }
 
 .topTitleContainer > h3 {
-    @apply text-2xl text-main-black font-medium;
+    @apply text-base text-main-black font-medium;
+    @apply xl:text-2xl;
 }
 
 .containerBottom {
-    @apply flex justify-center items-center w-full;
-    @apply xl:gap-[90px] xl:flex-col;
+    @apply flex flex-col justify-center items-center w-full gap-6;
+    @apply xl:gap-[90px];
 }
 
 .searchContainer {
-    @apply relative w-full h-[97px] rounded-2xl bg-main-theme-color;
+    @apply relative w-full h-[343px] rounded-2xl bg-main-theme-color;
+    @apply xl:h-[97px];
 }
 
 .searchBanner {
-    @apply absolute flex flex-row justify-between items-center top-[12px] left-[12px] right-[12px] p-[24px] bg-white rounded-lg;
+    @apply absolute flex flex-col gap-4 justify-between items-center top-[12px] left-[12px] right-[12px] p-4 bg-white rounded-lg;
+    @apply xl:flex-row xl:p-6;
     box-shadow: 0px 9.793px 172.719px 0px rgba(0, 0, 0, 0.07);
 }
 
 .searchParams {
-    @apply flex flex-row gap-[66px] divide-main-grey-dark divide-x-[2px];
+    @apply flex flex-col gap-4 w-full divide-main-grey-dark divide-y-[2px];
+    @apply xl:flex-row xl:divide-x-[2px] xl:divide-y-0 xl:gap-[66px];
+}
+
+.searchParams > div {
+    @apply w-full;
 }
 
 .searchParam {
-    @apply pl-8;
-    @apply xl:pl-[66px];
+    @apply pl-0 pt-4;
+    @apply xl:pl-[66px] xl:pt-0;
+}
+
+.buttonWrapper {
+    @apply w-full;
+    @apply xl:w-fit;
 }
 
 .dropIcon {
@@ -87,9 +108,51 @@
 }
 
 .eventsContainer {
-    @apply grid grid-cols-1 w-full;
-    @apply xl:grid-cols-3 xl:gap-8;
+    @apply relative grid grid-cols-1 w-full px-6 mt-32;
+    @apply xl:grid-cols-3 xl:gap-8 xl:px-0;
     @apply 2xl:grid-cols-4;
 }
 
+.carouselContent {
+    @apply flex justify-center duration-700 ease-in-out;
+}
+
+.prevContent {
+    @apply absolute top-0 translate-x-[100%] opacity-0;
+    @apply xl:relative xl:translate-x-0 xl:opacity-100;
+}
+
+.currentContent {
+    @apply relative;
+}
+
+.nextContent {
+    @apply absolute top-0 -translate-x-[130%] opacity-0;
+    @apply xl:relative xl:translate-x-0 xl:opacity-100;
+}
+
+.carouselControls {
+    @apply flex flex-row justify-center items-center gap-3;
+    @apply xl:hidden;
+}
+
+.carouselButton {
+    @apply flex justify-center items-center bg-main-theme-color w-[54px] aspect-square rounded-full;
+}
+
+.carouselIcon {
+    @apply stroke-white h-8 w-8;
+}
+
+.rotateLeft {
+    @apply rotate-90;
+}
+
+.rotateRight {
+    @apply -rotate-90;
+}
+
+.disabled {
+    @apply opacity-25;
+}
 

@@ -1,5 +1,5 @@
 .container {
-    @apply flex flex-col justify-center items-center bg-white;
+    @apply flex flex-col justify-center items-center gap-6 py-[76px] px-6 bg-white;
     @apply xl:p-[120px] xl:gap-[50px];
 }
 
@@ -8,11 +8,13 @@
 }
 
 .containerTop > h4 {
-    @apply font-semibold text-[40px] text-main-black;
+    @apply font-semibold text-[32px] text-main-black;
+    @apply xl:text-[40px];
 }
 
 .containerTop > h4 > span {
-    @apply font-semibold text-[40px] text-main-theme-color;
+    @apply font-semibold text-[32px] text-main-theme-color;
+    @apply xl:text-[40px];
 }
 
 .topTitleContainer {
@@ -20,7 +22,8 @@
 }
 
 .topTitleContainer > h3 {
-    @apply text-2xl text-main-black font-medium;
+    @apply text-base text-main-black font-medium;
+    @apply xl:text-2xl;
 }
 
 .containerBottom {
@@ -29,15 +32,18 @@
 }
 
 .playContainer {
-    @apply relative w-full h-[514px] rounded-2xl bg-main-grey-dark;
+    @apply relative w-full h-[233px] rounded-2xl bg-main-grey-dark;
+    @apply xl:h-[514px]
 }
 
 .playButton {
-    @apply absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[112px] aspect-square bg-main-grey rounded-full flex justify-center items-center;
+    @apply absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[49px] aspect-square bg-main-grey rounded-full flex justify-center items-center;
+    @apply xl:w-[112px];
     box-shadow: 0px 33.6px 33.6px 0px rgba(130, 130, 130, 0.20);
 }
 
 .playIcon {
-    @apply fill-white h-[54px] w-[54px];
+    @apply fill-white h-6 w-6;
+    @apply xl:h-[54px] xl:w-[54px];
 }
 

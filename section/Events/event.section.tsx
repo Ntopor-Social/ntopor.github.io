@@ -22,6 +22,7 @@ const Events: React.FC = () => {
     value: 1,
     label: "Bamenda",
   });
+  const [active, setActive] = useState<number>(0);
 
   const [category, setCategory] = useState<Options>({
     value: 1,
@@ -49,6 +50,18 @@ const Events: React.FC = () => {
     { value: 2, label: "100 XAF - 500 XAF" },
     { value: 3, label: "1,500 XAF - 2,000 XAF" },
   ];
+
+  const handlePrev = (topOffers: number) => {
+    if (active !== 0) {
+      return setActive(active - 1);
+    }
+  };
+
+  const handleNext = (topOffers: number) => {
+    if (active !== topOffers - 1) {
+      return setActive(active + 1);
+    }
+  };
 
   return (
     <div className={styles.clip}>
@@ -107,7 +120,7 @@ const Events: React.FC = () => {
                   />
                 </div>
               </div>
-              <div>
+              <div className={styles.buttonWrapper}>
                 <Button
                   text={"Search"}
                   size={ButtonSize.NORMAL}
@@ -117,15 +130,44 @@ const Events: React.FC = () => {
             </div>
           </div>
           <div className={styles.eventsContainer}>
-            <EventCard type={EventCardType.VIDEO} />
-            <EventCard />
-            <EventCard />
-            <EventCard />
-            <EventCard />
-            <EventCard />
-            <EventCard />
-            <EventCard />
-            <EventCard />
+            {Array(5)
+              .fill("0")
+              .map((_, index: number) => (
+                <div
+                  key={index}
+                  className={`${styles.carouselContent} ${
+                    index < active ? styles.prevContent : ""
+                  } ${index === active ? styles.currentContent : ""} ${
+                    index > active ? styles.nextContent : ""
+                  }`}
+                >
+                  <EventCard type={EventCardType.VIDEO} />
+                </div>
+              ))}
+          </div>
+          <div className={styles.carouselControls}>
+            <button
+              onClick={() => handlePrev(5)}
+              className={[
+                styles.carouselButton,
+                active === 0 && styles.disabled,
+              ].join(" ")}
+            >
+              <ChevronIcon
+                className={[styles.carouselIcon, styles.rotateLeft].join(" ")}
+              />
+            </button>
+            <button
+              onClick={() => handleNext(5)}
+              className={[
+                styles.carouselButton,
+                active === 4 && styles.disabled,
+              ].join(" ")}
+            >
+              <ChevronIcon
+                className={[styles.carouselIcon, styles.rotateRight].join(" ")}
+              />
+            </button>
           </div>
         </div>
       </section>

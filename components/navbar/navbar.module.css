@@ -1,5 +1,5 @@
 .navbar {
-    @apply sticky top-0 z-50 flex flex-row justify-between items-center bg-main-black w-full duration-500 ease-in-out;
+    @apply sticky top-0 z-50 overflow-x-clip flex flex-row h-[76px] justify-between items-center bg-main-black w-full duration-500 ease-in-out px-[1.6rem];
     @apply xl:px-[7.5rem] xl:h-[99px];
 }
 
@@ -12,7 +12,8 @@
 }
 
 .navbarLinks {
-    @apply flex flex-row justify-center items-center gap-[36px];
+    @apply hidden flex-row justify-center items-center gap-[36px];
+    @apply xl:flex;
 }
 
 .navbarLink {
@@ -20,5 +21,53 @@
 }
 
 .navbarButton {
-    @apply w-fit;
+    @apply w-fit hidden;
+    @apply xl:flex;
+}
+
+.navButtonMD {
+    @apply flex justify-center items-center rounded-2xl h-[3.2rem] w-[3.2rem] bg-main-theme-color;
+    @apply xl:hidden;
+}
+
+.navIndicator {
+    @apply relative w-[70%] h-[4px] rounded-2xl bg-main-black duration-700 ease-in-out;
+}
+
+.navIndicator::after,
+.navIndicator::before {
+    @apply content-[""] absolute w-full h-[4px] origin-left rounded-2xl bg-main-black duration-700 ease-in-out;
+}
+
+.navIndicator::after {
+    @apply -top-2.5 ;
+}
+
+.navIndicator::before {
+    @apply top-2.5;
+}
+
+.navIndicatorActive {
+    @apply h-0;
+}
+
+.navIndicatorActive::after {
+    @apply rotate-[46deg] -top-3 ml-[5px] w-[90%];
+}
+
+.navIndicatorActive::before {
+    @apply -rotate-[46deg] top-3 ml-[5px] w-[90%];
+}
+
+.navbarLinksMD {
+    @apply fixed flex justify-end h-[calc(100vh-76px)] top-[76px] bottom-0 bg-main-black/30 backdrop-blur w-full left-0 translate-x-full duration-700 ease-in-out;
+    @apply lg:hidden;
+}
+
+.navbarLinksMDActive {
+    @apply translate-x-0;
+}
+
+.linksContainer {
+    @apply h-full w-[80%] flex flex-col gap-4 bg-main-black p-4 py-8;
 }

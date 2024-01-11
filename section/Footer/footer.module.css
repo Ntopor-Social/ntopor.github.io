@@ -1,22 +1,26 @@
 .container {
-    @apply bg-main-black flex flex-col justify-end;
+    @apply bg-main-black flex flex-col justify-end h-[1200px] gap-[70px];
     @apply xl:h-[687px] xl:px-[72px] xl:gap-[50px]; 
 }
 
 .containerBanner {
-    @apply rounded-[30px] w-full bg-main-theme-color flex flex-col justify-center items-center gap-4 p-[60px];
+    @apply rounded-[30px] w-full bg-main-theme-color flex flex-col justify-center items-center gap-4 py-[50px] px-6;
+    @apply xl:p-[60px];
 }
 
 .containerBanner > h3 {
-    @apply text-white text-2xl font-normal;
+    @apply text-white text-base font-normal text-center;
+    @apply xl:text-2xl;
 }
 
 .containerBanner > h4 {
-    @apply text-white font-semibold text-[52px];
+    @apply text-white font-semibold text-[32px] text-center;
+    @apply xl:text-[52px];
 }
 
 .containerBanner > p {
-    @apply text-white text-lg font-normal;
+    @apply text-white text-base font-normal text-center;
+    @apply xl:text-lg;
 }
 
 .storeContainer {
@@ -28,15 +32,21 @@
 }
 
 .storeIcon {
-    @apply h-14 w-auto;
+    @apply h-12 w-auto;
+    @apply xl:h-14;
 }
 
 .containerBottom {
-    @apply flex flex-col gap-4 justify-center items-center;
+    @apply flex flex-col gap-4 justify-center px-6 items-center;
     @apply xl:px-[48px] xl:gap-[50px] xl:pb-[50px];
 }
 
 .linksContainer {
+    @apply flex flex-col justify-between items-start w-full gap-6;
+    @apply xl:flex-row;
+}
+
+.companyLinks2 {
     @apply flex flex-row justify-between items-start w-full;
 }
 
@@ -50,7 +60,13 @@
 }
 
 .companyLinks {
+    @apply hidden flex-row items-center justify-start gap-4;
+    @apply xl:flex;
+}
+
+.companyLinksBottom {
     @apply flex flex-row items-center justify-start gap-4;
+    @apply xl:hidden;
 }
 
 .linksIcon {
@@ -58,7 +74,8 @@
 }
 
 .companyNav {
-    @apply flex flex-col gap-[30px];
+    @apply flex flex-col gap-4 w-full;
+    @apply xl:gap-[30px];
 }
 
 .companyNav > h6 {
@@ -77,6 +94,10 @@
     @apply flex flex-row justify-center items-center bg-white/20 rounded-[10px] pl-[14px];
 }
 
+.inputContainer > input {
+    @apply w-full;
+}
+
 .sendButton {
     @apply bg-main-theme-color flex justify-center items-center w-[47.5px] aspect-square rounded-r-[10px];
 }
@@ -90,9 +111,11 @@
 }
 
 .footer {
-    @apply flex flex-row items-center justify-between w-full;
+    @apply flex flex-col items-center justify-between w-full gap-6 py-2;
+    @apply xl:flex-row;
 }
 
 .footer > p {
-    @apply text-white font-normal text-[20px];
+    @apply text-white font-normal text-lg;
+    @apply xl:text-[20px];
 }

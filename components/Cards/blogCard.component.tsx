@@ -2,10 +2,7 @@ import React from "react";
 
 import styles from "./card.module.css";
 import { Assets } from "@/static/assets/assets";
-import MapPinIcon from "../Icons/MapPinIcon";
-import Grid2Icon from "../Icons/Grid2Icon";
 import CalendarIcon from "../Icons/CalendarIcon";
-import ClockIcon from "../Icons/ClockIcon";
 import PlayIcon from "../Icons/PlayIcon";
 import User2Icon from "../Icons/User2Icon";
 

@@ -8,7 +8,7 @@ import QuoteIcon from "@/components/Icons/QuoteIcon";
 import ChevronIcon from "@/components/Icons/ChevronIcon";
 
 const Testimonial: React.FC = () => {
-  const [active, setActive] = useState<number>(0);
+  const [active, setActive] = useState<number>(3);
 
   const handlePrev = (topOffers: number) => {
     if (active !== 0) {
@@ -51,7 +51,11 @@ const Testimonial: React.FC = () => {
                 index > active + 2 ? styles.next2 : ""
               } ${active === index ? styles.current : ""}`}
             >
-              <div className={styles.testimonialCardImage}>
+              <div
+                className={`${styles.testimonialCardImage} ${
+                  active === index && styles.testimonialCardImageShadow
+                }`}
+              >
                 <img src={Assets.iphone} alt="UserImage" />
               </div>
               <div

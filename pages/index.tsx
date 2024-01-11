@@ -32,12 +32,12 @@ const Index: NextPageWithLayout = (): JSX.Element => {
         <Demo />
         <Features />
         <HowItWorks />
-        <Events />
+        {/* <Events />
         <Bills />
         <Testimonial />
         <Blog />
         <FAQ />
-        <Footer />
+        <Footer /> */}
       </main>
     </div>
   );

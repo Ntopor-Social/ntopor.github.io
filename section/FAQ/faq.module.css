@@ -1,5 +1,5 @@
 .container {
-    @apply flex flex-col justify-center items-center bg-white;
+    @apply flex flex-col justify-center items-center py-[76px] px-6 gap-6 bg-white;
     @apply xl:p-[120px] xl:gap-[50px] xl:pb-[300px];
 }
 
@@ -8,11 +8,13 @@
 }
 
 .containerTop > h4 {
-    @apply font-semibold text-[40px] text-main-black;
+    @apply font-semibold text-[32px] text-main-black;
+    @apply xl:text-[40px];
 }
 
 .containerTop > h4 > span {
-    @apply font-semibold text-[40px] text-main-theme-color;
+    @apply font-semibold text-[32px] text-main-theme-color;
+    @apply xl:text-[40px];
 }
 
 .topTitleContainer {
@@ -20,11 +22,12 @@
 }
 
 .topTitleContainer > h3 {
-    @apply text-2xl text-main-black font-medium;
+    @apply text-base text-main-black font-medium;
+    @apply xl:text-2xl;
 }
 
 .containerBottom {
-    @apply flex flex-col justify-center items-center w-full;
+    @apply flex flex-col justify-center items-center w-full gap-6;
     @apply xl:gap-[33px];
 }
 
@@ -37,19 +40,22 @@
 }
 
 .accordionTitle {
-    @apply flex flex-row justify-between items-center w-full;
+    @apply flex flex-row justify-between items-center w-full gap-4;
 }
 
 .accordionTitle > h6 {
-    @apply font-semibold text-2xl;
+    @apply text-base font-semibold;
+    @apply xl:text-2xl;
 }
 
 .accordionIcon {
-    @apply relative h-8 w-8;
+    @apply relative h-7 w-7;
+    @apply xl:h-8 xl:w-8;
 }
 
 .accordionIcon::before, .accordionIcon::after {
-    @apply absolute top-1/2 -translate-x-1/2 left-1/2 -translate-y-1/2 content-[""] h-6 w-[2.5px] bg-main-black rounded-sm duration-500 ease-in-out;
+    @apply absolute top-1/2 -translate-x-1/2 left-1/2 -translate-y-1/2 content-[""] h-5 w-[2.5px] bg-main-black rounded-sm duration-500 ease-in-out;
+    @apply xl:h-6;
 }
 
 .accordionIcon::after {
@@ -65,13 +71,18 @@
 }
 
 .accordionContent {
-    @apply  max-h-0 origin-top overflow-clip;
+    @apply   overflow-clip duration-700 ease-in-out;
 }
 
 .activeContent {
-    @apply  max-h-[600px] duration-500 ease-in-out;
+    @apply  max-h-[600px];
+}
+
+.inactiveContent {
+    @apply  max-h-0;
 }
 
 .accordionContent > p {
-    @apply text-lg font-normal;
+    @apply text-sm font-normal;
+    @apply xl:text-lg
 }

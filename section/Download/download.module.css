@@ -1,52 +1,59 @@
 .container {
-    @apply w-full flex justify-center items-center;
+    @apply w-full flex flex-col justify-center py-[76px] px-6 items-center gap-y-[50px];
     @apply xl:flex-row xl:p-[120px];
 }
 
 .containerLeft {
-    @apply flex flex-col justify-center items-start;
-    @apply xl:w-1/2 xl:gap-4;
+    @apply flex flex-col justify-center items-center w-full gap-4;
+    @apply xl:w-1/2 xl:gap-4 xl:items-start;
 }
 
 .containerLeft > h3 {
-    @apply text-[40px] font-semibold text-main-black w-[452px];
+    @apply text-[32px] font-semibold text-left text-main-black w-full;
+    @apply xl:text-[40px] xl:w-[452px] xl:text-left;
 }
 
 .containerLeft > h3 > span {
-    @apply text-main-theme-color text-[40px] font-semibold;
+    @apply text-main-theme-color text-[32px] font-semibold;
+    @apply xl:text-[40px];
 }
 
 .containerLeft > p {
-    @apply text-lg text-main-grey font-normal w-[452px];
+    @apply text-base text-main-grey font-normal text-left w-full;
+    @apply xl:text-lg xl:w-[452px] xl:text-left;
 }
 
 .stats {
-    @apply flex flex-row justify-start items-center divide-x-[1.5px] divide-black/20 gap-8;
+    @apply flex flex-col justify-start items-center w-full divide-y-[1.5px] divide-black/20 gap-3;
+    @apply xl:flex-row xl:divide-x-[1.5px] xl:divide-y-0 xl:gap-8;
 }
 
 .statsDetail {
-    @apply flex flex-col justify-start items-start gap-2;
+    @apply flex flex-col justify-start items-start gap-2 w-full;
 }
 
 .statsDetail > h6 {
-    @apply text-main-theme-color font-semibold text-[32px];
+    @apply text-main-theme-color font-semibold text-[24px] whitespace-nowrap;
+    @apply xl:text-[32px];
 }
 
 .statsDetail > p {
-    @apply text-lg font-normal text-black;
+    @apply text-base font-normal text-black;
+    @apply xl:text-lg
 }
 
 .margin {
-    @apply pl-8
+    @apply pt-3;
+    @apply xl:pl-8 xl:pt-0;
 }
 
 .containerRight {
-    @apply flex flex-col justify-center items-center;
+    @apply flex flex-col justify-center items-center w-full gap-6;
     @apply xl:w-1/2 xl:flex-row xl:gap-6;
 }
 
 .rightCard {
-    @apply relative p-6 rounded-2xl bg-main-off-white flex flex-col gap-4;
+    @apply relative p-6 w-full rounded-2xl bg-main-off-white flex flex-col gap-4;
     @apply xl:w-[280px];
 }
 

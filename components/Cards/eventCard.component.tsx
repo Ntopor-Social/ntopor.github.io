@@ -34,7 +34,7 @@ const EventCard: React.FC<Props> = ({ type = EventCardType.PIC }) => {
             <span>/person</span>
           </p>
         </div>
-        <div className={styles.divider} />
+        <div className={styles.divider2} />
         <div className={styles.eventInfos}>
           <div className={styles.eventInfo}>
             <Grid2Icon className={styles.eventIcon} />

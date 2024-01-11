@@ -1,5 +1,5 @@
 .container {
-    @apply flex flex-col justify-center items-center bg-white;
+    @apply flex flex-col justify-center items-center py-[76px] px-6 gap-6 bg-white;
     @apply xl:p-[120px] xl:gap-[50px];
 }
 
@@ -8,11 +8,13 @@
 }
 
 .containerTop > h4 {
-    @apply font-semibold text-[40px] text-main-black;
+    @apply font-semibold text-[32px] text-main-black text-center;
+    @apply xl:text-[40px];
 }
 
 .containerTop > h4 > span {
-    @apply font-semibold text-[40px] text-main-theme-color;
+    @apply font-semibold text-[32px] text-main-theme-color;
+    @apply xl:text-[40px];
 }
 
 .topTitleContainer {
@@ -20,28 +22,32 @@
 }
 
 .topTitleContainer > h3 {
-    @apply text-2xl text-main-black font-medium;
+    @apply text-base text-main-black font-medium;
+    @apply xl:text-2xl;
 }
 
 .containerBottom {
-    @apply relative flex flex-row justify-center items-center w-full overflow-clip z-10;
+    @apply relative flex flex-row justify-center items-center w-full overflow-x-clip z-10;
     /* @apply xl:gap-[33px]; */
 }
 
 .testimonialCard {
-    @apply flex flex-col justify-start items-center duration-500 ease-in-out;
+    @apply flex flex-col justify-start items-center duration-700 ease-in-out;
 }
 
 .prev2 {
-    @apply absolute -top-7 -translate-x-[90%] scale-[0.8] opacity-0;
+    @apply absolute -translate-y-7 -translate-x-[100%] scale-[0.8] opacity-0;
+    @apply xl:-translate-x-[90%];
 }
 
 .prev1 {
-    @apply absolute -top-7 -translate-x-[60%]  scale-[0.8];
+    @apply absolute -translate-y-7 -translate-x-full  scale-[0.8];
+    @apply xl:-translate-x-[60%];
 }
 
 .prev {
-    @apply absolute -top-7 -translate-x-[30%] scale-[0.8];
+    @apply absolute -translate-y-7 -translate-x-full scale-[0.8];
+    @apply xl:-translate-x-[30%];
 }
 
 .current {
@@ -49,15 +55,18 @@
 }
 
 .next {
-    @apply absolute -top-7 translate-x-[30%] scale-[0.8]; 
+    @apply absolute -translate-y-7 translate-x-full scale-[0.8];
+    @apply xl:translate-x-[30%]; 
 }
 
 .next1 {
-    @apply absolute -top-7 translate-x-[60%] scale-[0.8]; 
+    @apply absolute -translate-y-7 translate-x-full scale-[0.8];
+    @apply xl:translate-x-[60%]; 
 }
 
 .next2 {
-    @apply absolute -top-7 translate-x-[90%] scale-[0.8] opacity-0;
+    @apply absolute -translate-y-7 translate-x-full scale-[0.8] opacity-0;
+    @apply xl:translate-x-[90%];
 }
 
 .opacity0 {
@@ -76,16 +85,22 @@
     @apply h-full w-full object-center object-cover;
 }
 
+.testimonialCardImageShadow {
+    @apply drop-shadow-2xl shadow-xl;
+}
+
 .testimonialCustomer {
     @apply flex flex-col gap-1 justify-center items-center mb-6 duration-500 ease-in-out;
 }
 
 .testimonialCustomer > h6 {
-    @apply text-main-black font-semibold text-2xl;
+    @apply text-main-black font-semibold text-[20px];
+    @apply xl:text-2xl;
 }
 
 .testimonialCustomer > p {
-    @apply text-main-black font-normal text-lg;
+    @apply text-main-black font-normal text-base;
+    @apply xl:text-lg;
 }
 
 .ratingContainer {
@@ -97,11 +112,13 @@
 }
 
 .quoteContainer {
-    @apply relative w-[800px] duration-500 ease-in-out;
+    @apply relative w-[327px] duration-500 ease-in-out;
+    @apply xl:w-[800px];
 }
 
 .quoteContainer > p {
-    @apply text-2xl text-main-black font-normal text-center;
+    @apply text-lg text-main-black font-normal text-center;
+    @apply xl:text-2xl;
 }
 
 .quoteIcon {

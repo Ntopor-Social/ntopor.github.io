@@ -5,7 +5,7 @@
  **/
 const nextConfig = {
   output: "export",
-  basePath: '/ntopor.github.io/',
+  basePath: '/ntopor.github.io',
   /* config options here */
 };
 

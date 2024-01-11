@@ -62,29 +62,31 @@ const Footer: React.FC = () => {
               />
             </div>
           </div>
-          <div className={styles.companyNav}>
-            <h6>Company</h6>
-            <div className={styles.companyNavLinks}>
-              {navLinks.map((navlink, index: number) => (
-                <Link
-                  key={index}
-                  href={navlink.value}
-                  className={styles.companyNavLink}
-                >
-                  {navlink.label}
-                </Link>
-              ))}
+          <div className={styles.companyLinks2}>
+            <div className={styles.companyNav}>
+              <h6>Company</h6>
+              <div className={styles.companyNavLinks}>
+                {navLinks.map((navlink, index: number) => (
+                  <Link
+                    key={index}
+                    href={navlink.value}
+                    className={styles.companyNavLink}
+                  >
+                    {navlink.label}
+                  </Link>
+                ))}
+              </div>
             </div>
-          </div>
-          <div className={styles.companyNav}>
-            <h6>Contact</h6>
-            <div className={styles.companyNavLinks}>
-              <p className={styles.companyNavLink}>(406) 555-0120</p>
-              <p className={styles.companyNavLink}>www.example.com</p>
-              <p className={styles.companyNavLink}>example@gmail.com</p>
-              <p className={styles.companyNavLink}>
-                56, Rajar Golli, Amborkhana, Sylhet
-              </p>
+            <div className={styles.companyNav}>
+              <h6>Contact</h6>
+              <div className={styles.companyNavLinks}>
+                <p className={styles.companyNavLink}>(406) 555-0120</p>
+                <p className={styles.companyNavLink}>www.example.com</p>
+                <p className={styles.companyNavLink}>example@gmail.com</p>
+                <p className={styles.companyNavLink}>
+                  56, Rajar Golli, Amborkhana, Sylhet
+                </p>
+              </div>
             </div>
           </div>
           <div className={styles.companyNav}>
@@ -96,10 +98,27 @@ const Footer: React.FC = () => {
               </div>
             </div>
           </div>
+          <div className={styles.companyLinksBottom}>
+            <IconButton
+              icon={<FaceBookIcon className={styles.linksIcon} />}
+              type={ButtonType.TER}
+            />
+            <IconButton
+              icon={<YouTubeIcon className={styles.linksIcon} />}
+              type={ButtonType.TER}
+            />
+            <IconButton
+              icon={<TwitterIcon className={styles.linksIcon} />}
+              type={ButtonType.TER}
+            />
+          </div>
         </div>
         <div className={styles.divider} />
         <div className={styles.footer}>
-          <p>Copyright © {new Date().getFullYear()} Event Booking Dot. All Rights Reserved.</p>
+          <p>
+            Copyright © {new Date().getFullYear()} Event Booking Dot. All Rights
+            Reserved.
+          </p>
           <p>User Terms & Conditions | Privacy Policy</p>
         </div>
       </div>

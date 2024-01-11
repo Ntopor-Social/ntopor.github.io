@@ -1,24 +1,26 @@
 .container {
-    @apply flex flex-col justify-start items-center bg-main-off-white;
+    @apply flex flex-col justify-start items-center py-[76px] px-6 gap-6 bg-main-off-white;
     @apply xl:p-[120px] xl:gap-[50px];
 }
 
 .containerTop {
-    @apply flex flex-col gap-4 justify-center items-end;
-    @apply xl:flex-row;
+    @apply flex flex-col gap-4 justify-center items-center;
+    @apply xl:flex-row xl:items-end;
 }
 
 .topTitle {
-    @apply flex flex-col justify-start items-start;
-    @apply xl:w-1/2;
+    @apply flex flex-col justify-start items-center;
+    @apply xl:w-1/2 xl:items-start;
 }
 
 .topTitle > h4 {
-    @apply font-semibold text-[40px] text-main-black;
+    @apply font-semibold text-[32px] text-main-black text-center whitespace-nowrap;
+    @apply xl:text-[40px] xl:whitespace-normal;
 }
 
 .topTitle > h4 > span {
-    @apply font-semibold text-[40px] text-main-theme-color;
+    @apply font-semibold text-[32px] text-main-theme-color;
+    @apply xl:text-[40px];
 }
 
 .topTitleContainer {
@@ -26,7 +28,8 @@
 }
 
 .topTitleContainer > h3 {
-    @apply text-2xl text-main-black font-medium;
+    @apply text-base text-main-black font-medium;
+    @apply xl:text-2xl;
 }
 
 .topDescription {
@@ -39,7 +42,7 @@
 }
 
 .containerBottom {
-    @apply grid grid-cols-1 w-full;
+    @apply grid grid-cols-1 w-full gap-y-8;
     @apply xl:gap-[33px] xl:grid-cols-3;
     /* @apply 2xl:grid-cols-4; */
 }

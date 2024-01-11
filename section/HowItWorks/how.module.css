@@ -1,5 +1,5 @@
 .container {
-    @apply flex flex-col justify-center items-center bg-white;
+    @apply flex flex-col justify-center items-center py-[76px] px-6 gap-6 pt-[400px] bg-white;
     @apply xl:p-[120px] xl:gap-[50px] xl:pt-[350px];
 }
 
@@ -8,11 +8,13 @@
 }
 
 .containerTop > h4 {
-    @apply font-semibold text-[40px] text-main-black;
+    @apply font-semibold text-[32px] text-main-black;
+    @apply xl:text-[40px];
 }
 
 .containerTop > h4 > span {
-    @apply font-semibold text-[40px] text-main-theme-color;
+    @apply font-semibold text-[32px] text-main-theme-color;
+    @apply xl:text-[40px];
 }
 
 .topTitleContainer {
@@ -20,34 +22,38 @@
 }
 
 .topTitleContainer > h3 {
-    @apply text-2xl text-main-black font-medium;
+    @apply text-base text-main-black font-medium;
+    @apply xl:text-2xl;
 }
 
 .containerBottom {
-    @apply flex justify-center items-center w-full;
+    @apply flex justify-center flex-col items-center w-full gap-[54px];
     @apply xl:gap-[33px] xl:flex-row;
 }
 
 .bottomIllustration {
-    @apply flex justify-center items-center;
-    @apply xl:w-1/2;
+    @apply flex justify-center items-center w-full h-[329.378px];
+    @apply xl:w-1/2 xl:h-full;
 }
 
 .bottomIllustrationIcon {
-    @apply h-[533px] w-[529.153px];
+    @apply h-[329.378px] w-auto;
+    @apply xl:h-[533px] xl:w-[529.153px];
 }
 
 .steps {
-    @apply flex flex-col justify-start items-start;
+    @apply flex flex-col justify-start items-start gap-6;
     @apply xl:gap-[66px] xl:w-1/2;
 }
 
 .step {
-    @apply flex flex-row justify-start items-center gap-6;
+    @apply flex flex-row justify-start items-start gap-3;
+    @apply xl:gap-6;
 }
 
 .stepIconContainer {
-    @apply w-[70px] shrink-0 aspect-square rounded-full bg-main-black flex justify-center items-center;
+    @apply w-[56px] shrink-0 aspect-square rounded-full bg-main-black flex justify-center items-center;
+    @apply xl:w-[70px];
 }
 
 .stepIcon {
@@ -55,7 +61,8 @@
 }
 
 .stepIconContainer1 {
-    @apply w-[70px] shrink-0 aspect-square rounded-full bg-main-off-white flex justify-center items-center;
+    @apply w-[56px] shrink-0 aspect-square rounded-full bg-main-off-white flex justify-center items-center;
+    @apply xl:w-[70px];
 }
 
 .stepIcon1 {

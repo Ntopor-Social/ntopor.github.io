@@ -49,7 +49,7 @@ const FAQ: React.FC = () => {
               className={`${styles.accordionContent} ${
                 JSON.stringify(FAQ) === JSON.stringify(faq)
                   ? styles.activeContent
-                  : ""
+                  : styles.inactiveContent
               }`}
             >
               <p
