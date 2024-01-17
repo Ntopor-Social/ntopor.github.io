@@ -15,6 +15,8 @@ import FAQ from "@/section/FAQ/faq.section";
 import Bills from "@/section/Bills/bills.section";
 import Testimonial from "@/section/Testimonials/testimonials.section";
 
+// Responsive design part 2
+
 const Index: NextPageWithLayout = (): JSX.Element => {
   const position = UseScrollPosition();
   return (
