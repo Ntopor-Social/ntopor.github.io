@@ -4,8 +4,8 @@
  * @type {import('next').NextConfig}
  **/
 const nextConfig = {
-  // output: "export",
-  // basePath: '/ntopor.github.io',
+  output: "export",
+  basePath: '/ntopor.github.io',
   /* config options here */
 };
 
